@@ -18,7 +18,5 @@ export default Joi.object({
     .regex(/^([01]?\d|2[0-3]):[0-5]\d$/)
     .required(),
   status: Joi.string().valid('consult', 'revisit').required(),
-  patientAge: Joi.string()
-    .regex(/^([1-9]|[1-9]\d|100)$/)
-    .required(),
+  patientAge: Joi.number().min(1).max(100).required(),
 })
