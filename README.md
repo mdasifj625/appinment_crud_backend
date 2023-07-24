@@ -1,4 +1,4 @@
-## NodeJS Blog CRUD
+## NodeJS Appointment Booking Backent
 
 
 
@@ -7,11 +7,11 @@
 - yarn install
 
 ### Step 2
-- yarn run copy-env
+- create .env file like .env.example
 - Open the .env file and edit the values for the database and others.
 
 ### Step 3 (dev start)
-- yarn run dev
+- yarn dev
 
 ### Step 4 (prod start)
 - yarn start
