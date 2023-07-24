@@ -9,6 +9,9 @@
     "dev": "nodemon src/server.js",
     "copy-env": "cp .env.sample .env"
   },
+  "engines": {
+    "node": "^18.xx"
+  },
   "keywords": [
     "Appointment",
     "CRUD"
