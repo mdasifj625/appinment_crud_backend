@@ -10,7 +10,7 @@
     "copy-env": "cp .env.sample .env"
   },
   "engines": {
-    "node": "^18.xx"
+    "node" : ">=16.0.0"
   },
   "keywords": [
     "Appointment",
