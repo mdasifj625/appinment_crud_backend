@@ -14,6 +14,7 @@ router.use(rateLimiter)
 
 router.post('/', (req, res) => {
   console.log(req.body)
+  res.send('success')
 })
 
 router.use('/appointments', appointmentRouter)
