@@ -12,6 +12,10 @@ const rateLimiter = RateLimit({
 const router = Router()
 router.use(rateLimiter)
 
+router.post('/', (req, res) => {
+  console.log(req.body)
+})
+
 router.use('/appointments', appointmentRouter)
 
 export { router as AppRoutes }
