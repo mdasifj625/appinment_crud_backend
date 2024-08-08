@@ -6,17 +6,17 @@ export class Database {
 
   constructor({
     url = 'mongodb://localhost:27017/test',
-    connectionOptions = {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    },
+    connectionOptions = {},
   }) {
-    this.url = url
-    this.connectionOptions = connectionOptions
+    this.#url = url
+    this.#connectionOptions = connectionOptions
   }
 
   async connect() {
-    const mongoose = await connect(this.url.toString(), this.connectionOptions)
+    const mongoose = await connect(
+      this.#url.toString(),
+      this.#connectionOptions
+    )
     Logger.info('Database Connected Successfully.', mongoose)
   }
 }
