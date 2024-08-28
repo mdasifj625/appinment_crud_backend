@@ -7,7 +7,7 @@ const router = Router()
 router.get('/ping', (req, res) => {
   axios
     .get(
-      'http://abb4faa7028534ca19e6b1100c9e3cf1-1686814778.ap-south-1.elb.amazonaws.com/ping'
+      'https://gamerouter.spartanpoker.com/ping'
     )
     .then((prod_ping) => {
       console.log('Production ping response: ', prod_ping.data)
